@@ -1,0 +1,181 @@
+<!--Calendar of current study groups, option to create a group  -->
+<!--We are creating a website that allows students to create a study group
+
+index
+- click button to create an account with your northeastern email address
+- sign in with your northeastern email
+
+newaccount
+- select which classes you are in
+- select whether or not you want to be notified when study groups are created for the classes you are in
+
+createsession
+- Create an study event 
+- Select which class you are studying for or which topic
+- Where you want to study (snell or a classroom or a space near campus or online)
+- Select the max ammount of people who can join
+- invite friends who also have accounts
+- Once you have created the event you can choose to add it to your google calendar
+- It will be added to the apps universal calendar 
+- It will create a groupchat between you and anyone who joins the study group online
+- You can get a notification 15 minutes before the study event
+- Cancel button if you can't make it 
+- what is the focus of the session you are creating
+
+Join a group
+
+My information page
+- what are my classes
+- email
+- change your password
+- logout
+-->
+
+<!DOCTYPE Html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <title>Awesome Search Box</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(https://news.northeastern.edu/wp-content/uploads/2018/08/KingHuskyHead.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 15% 40%;
+      background-size: 400px;
+    }
+
+    .search-box {
+      position: absolute;
+      top: 10%;
+      left: 24%;
+      transform: translate(-50%, -50%);
+      background: #666666;
+      height: 50px;
+      border-radius: 40px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .search-box:hover>.search-txt {
+      width: 240px;
+      padding: 0 6px;
+    }
+
+    .search-box:hover>.search-btn {
+      background: white;
+      color: black;
+    }
+
+    .search-btn {
+      color: #eeeeee;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2f3640;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .search-btn>i {
+      font-size: 20px;
+    }
+
+    .search-txt {
+      border: none;
+      background: none;
+      outline: none;
+      padding: 0;
+      color: white;
+      font-size: 16px;
+      transition: 0.4s;
+      line-height: 40px;
+      width: 0px;
+      font-weight: bold;
+    }
+    }
+  </style>
+
+
+  <div class="search-box">
+    <input type="text" name="name" class="search-txt" placeholder="Type to search" />
+    <a class="search-btn" href="#">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  </br>
+
+  <style>
+    .anybutton {
+      top: 85%;
+      left: 20%;
+      width: 100px;
+      height: 80px;
+      position: absolute;
+      z-index: 2;
+      border-radius: 25px;
+      background: rgb(210, 4, 45);
+    }
+  </style>
+
+  <body style="text-align:center; margin: 0px; font-family:serif; font-size: 18px;">
+
+    <div class="mycenter" id="">
+      <a href=createsession.html> <button type="CreateSession" class=anybutton style="color:white;">Create
+          Group</button>
+      </a>
+      </button>
+
+<div class="sidenav">
+</div>
+
+<div class="main"> </div>
+
+<style>
+  .sidenav {
+    height: 100%;
+    width: 1000px;
+    margin-left: 750px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #666666;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    margin-right: 285px;
+    margine-top: 50px;
+   text-decoration: none;
+   font-size: 50px;
+   color: #ffffff;
+   display: block;
+
+</style>
+
+<div class="sidenav">
+  <a href="#about">Your Groups</a>
+</div>
+
+  </body>
+</html>

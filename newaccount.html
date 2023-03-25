@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<center>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <h2 style="background-color:rgb(220, 20, 60);font-family:serif;border: 5px solid tomato;color: white;">Welcome to
+    MyStudyGroup Northeastern!</h2>
+  </br>
+
+  <b style="font-family:serif;font-size: 18px;padding: 30px;"> Please fill out the following fields to create your
+    account. </b> </br>
+
+  <label for="First Name" style="font-family:serif;font-size: 18px" onchange="createnewuser()"> First Name:</label>
+  <input type="First Name" id="First Name" name="First Name" placeholder="First Name"
+    style="font-family:serif;font-size: 18px">
+
+  <body>
+    <br>
+    <section>
+      <b style="font-family: serif;font-size: 18px;"> Enter which classes you are most interested in studying with a group.</b>
+      </br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3" style="background-color: rgb(210, 4, 45);
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>
+            <p style="font-family:serif;font-size: 18px;color: white;"> Course 01: </p>
+
+            <label for="course-name" >Select Course</label>
+            <select name="course-name" id="course-name" onchange="createclassid()">
+              <option value="CS">CS</option>
+              <option value="CS">CY</option>
+              <option value="CS">IS</option>
+              <option value="CS">DS</option>
+            </select> </br>
+            <label for="course-no" >Course Number</label>
+            <input type="number" id="number" name="number" placeholder="Course Number" onchange="createclassid() "> </br></p>
+          </div>
+
+          <div class="col-xs-6 col-sm-3" style="background-color: rgb(210, 4, 45);
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+
+            <p>
+            <p style="font-family:serif;font-size: 18px;color: white;"> Course 02: </p>
+
+            <label for="course-name">Select Course</label>
+            <select name="course-name" id="course-name">
+              <option value="CS">CS</option>
+              <option value="CS">CY</option>
+              <option value="CS">IS</option>
+              <option value="CS">DS</option>
+            </select> </br>
+            <label for="course-no">Course Number</label>
+            <input type="number" id="number" name="number" placeholder="Course Number"> </br></p>
+          </div>
+
+          <div class="clearfix visible-xs"></div>
+
+          <div class="col-xs-6 col-sm-3" style="background-color: rgb(210, 4, 45);
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+
+            <p>
+            <p style="font-family:serif;font-size: 18px;color: white;"> Course 03: </p>
+
+            <label for="course-name">Select Course</label>
+            <select name="course-name" id="course-name">
+              <option value="CS">CS</option>
+              <option value="CS">CY</option>
+              <option value="CS">IS</option>
+              <option value="CS">DS</option>
+            </select> </br>
+            <label for="course-no">Course Number</label>
+            <input type="number" id="number" name="number" placeholder="Course Number"> </br></p>
+          </div>
+
+          <div class="col-xs-6 col-sm-3" style="background-color: rgb(210, 4, 45);
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+
+            <p>
+            <p style="font-family:serif;font-size: 18px;color: white;"> Course 04: </p>
+
+            <label for="course-name">Select Course</label>
+            <select name="course-name" id="course-name">
+              <option value="CS">CS</option>
+              <option value="CS">CY</option>
+              <option value="CS">IS</option>
+              <option value="CS">DS</option>
+            </select> </br>
+            <label for="course-no">Course Number</label>
+            <input type="number" id="number" name="number" placeholder="Course Number"> </br></p>
+          </div>
+          <div class="col-xs-6 col-sm-3" style="background-color: rgb(210, 4, 45);
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"
+
+</br> 
+    </section>
+<b style="padding: 30px;font-family: serif;font-size: 18px;">Input your Northeastern Email. </b> </br>
+<label for=" Email Address" style="font-family:serif;font-size: 18px"> Northeastern Email:</label>
+<input type="email" id="email" name="Email" placeholder="Email Address" style="font-family:serif;font-size: 18px"> </br>
+
+<b style="padding: 30px;font-family: serif;font-size: 18px;">Choose an 8-character password. </b></br>
+<label for=" Password" style="font-family:serif;font-size: 18px">Password:</label>
+<input type="password" id="password" name="password" placeholder="Password" style="font-family:serif;font-size: 18px"> </br>
+    
+    <b style="padding: 30px;font-family: serif;font-size: 18px;">Would you like to be notified if study sessions are
+      created for any of your classes?</b> </br> </br>
+    <button type="button" class="btn btn-success">YES</button>
+    <button type="button" class="btn btn-danger">NO</button>
+    </button>
+    </br> </br> </br> </br>
+
+    <a href=currentgroups.html> <button type="button" class="btn btn-dark .btn-lg"
+        style="font-family:serif;font-size: 18px">Create Account </button></a>
+
+    <script src=”https://code.jquery.com/jquery-3.2.1.slim.min.js”
+      integrity=”sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN”
+      crossorigin=”anonymous”></script>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+      integrity=”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q”
+      crossorigin=”anonymous”></script>
+
+    <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js”
+      integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl”
+      crossorigin=”anonymous”></script>
+
+  </body>
+</center>
+
+</html>

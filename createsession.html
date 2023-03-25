@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function myFunction() {
+      document.getElementById("ques2").style.display = "block";
+    }
+  </script>
+</head>
+<b style="font-family:serif;>
+<body>
+  <center>
+    <h2>Schedule a Study Session</h2>
+    <link rel=" stylesheet" <href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </center>
+  <section>
+    <h3>
+      <div class="row">
+        <div class="col-xs-6 col-md-offset-3" style="background-color: rgb(210, 4, 45); 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+          <p class="ques1">
+            <center>Which class or topic are you planning to study? </br></br>
+              <label for="your-courses">Your Courses</label>
+              <select name="your-courses" id="your-courses">
+                <option value="CS-3000">CS-3000</option>
+              </select>
+            <button type="button" onclick="myFunction()"> Submit </button>
+              <script src="myFunction2.js"></script>
+            </center>
+          </p>
+        </div>
+
+      </div>
+    </h3>
+
+    <!--We should probably just have the success button show up after a final submit button. Otherwise it shows up before the maximum number of people is picked. 
+
+    <!-- Show multiple options: the classes you inputted earlier and a "other" option that you can type in.  -->
+  
+  <section style="display :none" name="ques-2" id="ques2">
+    <p>
+      <a href=" https://northeastern.libcal.com/reserve/">Spaces at Snell Library</a> </br>
+      Reserve rooms for up to 12 people.
+      </br> </br>
+      <a href="https://nolecture.com/northeastern"> NoLecture </a>
+      </br>
+      Classes at Northeastern that are not currently occupied.
+      Note that this information is not always updated. </p>
+
+    <br>
+    <h3>
+      <div class="row">
+        <div class="col-xs-6 col-md-offset-3" style="background-color: rgb(210, 4, 45); 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+          <p class="ques1">
+            <center>Which space have you booked to hold the study session? </br></br>
+              <label for="place">Study Space</label>
+              <input type="input" name="place" class="data">
+              
+            </center>
+          </p>
+        </div>
+
+      </div>
+    </h3>
+    <h3>
+      <div class="row">
+        <div class="col-xs-6 col-md-offset-3" style="background-color: rgb(210, 4, 45); 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+          <p class="ques1">
+            <center>What is the maximum number of people you would like to join? </br></br>
+              <label for="maximum">Number of People</label>
+              <input type="input" name="people" class="data">
+              </select>
+            </center>
+          </p>
+        </div>
+
+        <h3>
+      <div class="row">
+        <div class="col-xs-6 col-md-offset-3" style="background-color: rgb(210, 4, 45); 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+          <p class="ques1">
+            <center>
+              What time is the study session?
+              <br></br>
+              <label for="place">Time</label>
+              <input type="input" name="time" class="data">
+            </center>
+          </p>
+
+      </div>
+    </h3>
+
+        <center>
+        <button type="button" onclick="myFunction2()">Submit</button>
+        <script src="script.js"></script>
+        </center>
+        </section>
+
+  <section style="display :none" name="ques-3" id="ques3">
+    <center>
+      <h3>
+      Invite friends to your session </h3> 
+    Input the email addresses of friends you want to join. Note that only Northeastern Students can be added.
+    </br></br>
+    <label for=" Email Address">Email:</label>
+    <input type="email" id="email" name="Email" placeholder="Email Address">
+      </center>
+    <center>
+      <h3>Success!</h3>
+
+      <b>You have successfully created a study session.
+        Proof of your reservation will be sent to your email.
+        Would you like to add it to your google calendar?
+        </br> </br>
+        <button type="button">YES</button>
+        <button type="button">NO</button>
+      </b>
+    </center>
+    <br></br>
+
+    <a href=currentgroups.html> <button type="Return to Calendar" class="btn btn-dark .btn-lg">Return to
+        Calendar</button></a></a>
+    </center>
+</b>
+</section>
+</body>
+
+</html>
